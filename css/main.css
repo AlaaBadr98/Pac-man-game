@@ -1,0 +1,470 @@
+@font-face {
+  font-family: myFont;
+  src: url(../font/SassoonInfantStd.otf);
+}
+
+body {
+  font-family: myFont;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000000;
+}
+
+.container {
+  padding: 0;
+  /*width:1280px;max-height:630px;*/
+  margin: 0 auto;
+}
+
+.header {
+  padding-bottom: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.header .headingTop {
+  overflow: hidden;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+.loadPage {
+  position: relative;
+  /*width:1200px;height:460px;*/
+  top: -10px;
+  padding: 10px 20px;
+  margin: 0px 40px;
+  z-index: 1;
+  border: 5px solid #f5821f;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #deecf6;
+  display: flex;
+  margin-top: -15px;
+  padding-top: 15px;
+  overflow: hidden;
+  flex;
+  align-items: center;
+}
+
+
+/*.footer .col-xs-12{display:flex;align-items: center;justify-content: space-around;}*/
+
+.pageNumber {
+  border: 3px solid #0fa0c5;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 68px;
+  height: 76px;
+  background-color: #fff;
+}
+
+.nextBtn,
+.backBtn,
+.showAnsBtn,
+.resourseBtn,
+.reloadBtnAll,
+.reloadBtnScreen,
+.helpBtn {
+  cursor: pointer;
+}
+
+.resoursePopup,
+.helpPopup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+
+.resourseContainer,
+.helpContainer {
+  position: relative;
+  width: 1200px;
+  height: 460px;
+  background-color: #fff;
+  border: 5px solid #f5821f;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.titleAudio {
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+
+/*Dragger*/
+
+.audioDragger {
+  width: 100%;
+  height: 55px;
+  position: relative;
+}
+
+.audioDragContainer {
+  background: url('../assets/images/timeline.png') no-repeat;
+  width: 100%;
+  height: 15px;
+  top: 40%;
+  cursor: pointer;
+}
+
+.audioDrag {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 0px;
+  -webkit-transition: left 2s;
+  transition: left 2s;
+  left: 0;
+  position: relative;
+}
+
+.audioPlayerContainer #pButton {
+  cursor: pointer;
+}
+
+.audioPlayerContainer .play {
+  background: url('../assets/images/play.png')
+}
+
+.audioPlayerContainer .pause {
+  background: url('../assets/images/pause.png')
+}
+
+
+/*Dragger*/
+
+.marginNone {
+  margin: 0;
+}
+
+.paddingNone {
+  padding: 0;
+}
+
+.marginBottom-10 {
+  margin-bottom: 10px;
+}
+
+.marginBottom-20 {
+  margin-bottom: 20px;
+}
+
+.marginBottom-30 {
+  margin-bottom: 30px;
+}
+
+.marginBottom-40 {
+  margin-bottom: 40px;
+}
+
+.marginBottom-50 {
+  margin-bottom: 50px;
+}
+
+.marginTop-10 {
+  margin-top: 10px;
+}
+
+.marginTop-20 {
+  margin-top: 20px;
+}
+
+.marginTop-30 {
+  margin-top: 30px;
+}
+
+.marginTop-40 {
+  margin-top: 40px;
+}
+
+.marginTop-50 {
+  margin-top: 50px;
+}
+
+.inlineblock {
+  display: inline-block;
+}
+
+.header .box1 {
+  width: 8%;
+  display: inline-block;
+  margin: 1% 0% 1% 2%;
+}
+
+.box1 {
+  width: 8%;
+  display: inline-block;
+  margin: 1% 2%;
+}
+
+.box2 {
+  width: 10%;
+  display: inline-block;
+  margin: 1% 1%;
+}
+
+.box3 {
+  width: 46%;
+  display: inline-block;
+  margin: 1% 1%;
+}
+
+.box4 {
+  width: 13%;
+  display: inline-block;
+  text-align: center;
+}
+
+.boxhead5 {
+  width: 95%;
+  display: inline-block;
+  margin: 1% 1%;
+}
+
+.boxhead5 h1 {
+  font-size: 3vw;
+}
+
+.slidecontainer {
+  position: relative;
+  top: 11.5px;
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 0px;
+  background: white;
+  outline: none;
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  transition: step 1s ease-in;
+}
+
+
+.slider::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #FFF;
+  border-radius: 1.3px;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+  top: 11.5px;
+}
+
+
+
+
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+#container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page_content {
+  width: 1280px;
+  height: 960px;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: all 500ms ease-in-out !important;
+  transition: all 500ms ease-in-out !important;
+  position: absolute;
+}
+
+.controlsinline {
+  margin: 26px;
+}
+
+.container-fluid {
+  max-width: 1280px;
+  max-height: 960px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  /*border: 1px solid green;
+  background: url("../template_v2-03.png") no-repeat left top;
+  background-size: contain;*/
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+
+.header {
+  display: flex;
+  height: 80px;
+}
+
+.headingTitle h1 {
+  margin: 0;
+  font-size: 38px;
+
+
+
+}
+
+.pageContainer {
+  padding: 0 25px;
+}
+
+.pageContent {
+  position: relative;
+  /*top: -10px;*/
+  padding: 10px 20px;
+  z-index: 1;
+  border: 5px solid #f5821f;
+  border-radius: 20px;
+  background-color: black;
+  background: url("../pac-man-2-the-new-adventures-desktop-wallpaper-video-game-wallpaper-png-favpng-7JUdYjGLCrdGP8ahns6sRTCCt.jpg") no-repeat;
+  background-size: cover;
+  background-position: -40px 0px;
+
+
+}
+
+.pageBg {
+  background-color: #0fa0c5;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+.noPaddingRt {
+  padding-right: 0 !important;
+}
+
+.noPaddingLt {
+  padding-left: 0 !important;
+}
+
+.showAnsBtn img {
+  margin: 0 auto;
+}
+
+
+
+.controlsDiv {
+  background: url("../assets/images/draggerBG.png") no-repeat center;
+  height: 76px;
+}
+
+
+
+.carousel-inner {
+  /* margin-top: 15%; */
+}
+
+.resourseContainer,
+.helpContainer {
+  position: relative;
+  width: 1260px;
+  height: 460px;
+  background-color: #fff;
+  border: 5px solid #f5821f;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid #c5c5c5;
+  background: #f6f6f6;
+  cursor: pointer;
+}
+
+.floatNone {
+  margin: 0 auto;
+  float: none !important;
+}
+
+.marginTop-60 {
+  margin-top: 60px;
+}
+
+.pageAudioIcon {
+  background: url("../assets/images/audio_icon.png") no-repeat;
+  height: 51px;
+  width: 65px;
+  position: absolute;
+  cursor: pointer;
+}
